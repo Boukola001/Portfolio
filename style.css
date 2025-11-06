@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth; /* scroll fluide lors des clics sur nav */
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #222;
+}
+
+section {
+  min-height: 100vh; /* chaque section prend tout l'écran */
+  padding: 80px 40px; /* espace pour le contenu et le nav fixe */
+}
+
+nav {
+  background: #fafafa;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;             /* Collée en haut */
+    z-index: 1000;      /* Au-dessus du contenu */
+}
+
+
+nav a.active {
+  color: #4477aa;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    text-transform: uppercase;
+}
+
+nav .nav-link:hover {
+    color: #4caf50;
+}
+
+.lang-toggle {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.lang-toggle button {
+    margin: 0 5px;
+    padding: 5px 12px;
+    font-size: 1em;
+    border: 1px solid #222;
+    background: #fff;
+    color: #222;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lang-toggle button:hover {
+    background: #4caf50;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    margin-top: 30px;
+}
+
+
+/*Styles pour l'accueil*/
+#home {
+  min-height: 100vh;              /* plein écran */
+  display: flex;                  /* active flexbox */
+  justify-content: center;        /* centre horizontalement */
+  align-items: center;            /* centre verticalement */
+  flex-direction: column;         /* empile h1 et p verticalement */
+  text-align: center;             /* centre le texte */
+  padding: 0 20px;                /* un peu d’espace sur les côtés */
+  /*background-image: url("images/im1.jpg") ;
+  background-size: cover;       /* L'image couvre tout l'élément */
+  /*background-position: center;  /* Centrage de l'image */
+  /*background-repeat: no-repeat; /* Pas de répétition */
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#home p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+
+/*Styles pour à propos*/
+.journey {
+    max-width: 700px;
+    
+    font-family: 'Poppins', sans-serif;
+  }
+
+h1{
+  font-size: 3em;
+}
+
+img{
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    color: #2a73cc;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+.journey h2 {
+    text-align: left;
+    font-size: 2em;
+    color: #2a73cc;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+.timeline {
+    position: relative;
+    margin: 0 50px;
+    padding: 0 20px;
+    border-left: 3px solid #2a73cc;
+  }
+  
+.timeline dt {
+    font-weight: bold;
+    color: #2a73cc;
+    margin-top: 20px;
+  }
+  
+.timeline dd {
+    margin: 0 0 30px 20px;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+.timeline dd::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #2a73cc;
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 18px;
+  }
+  
+.timeline h3 {
+    margin: 0;
+    color: #222;
+  }
+  
+.timeline p {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+    color: #555;
+  }
+
+#photo_eva{
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+/*Styles pour le portfolio*/
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+
+.project {
+  flex: 0 1 250px;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(42, 115, 204, 0.1);
+  padding: 20px;
+  border: 5px black double;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.project:hover {
+  background: linear-gradient(135deg, #2a73cc 0%, #245a9b 100%);
+  box-shadow: 0 8px 16px rgba(42, 115, 204, 0.3);
+  transform: translateY(-5px);
+  border: 5px #222 double;
+  color: white;
+}
+
+.project a.bouton {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 0;
+}
+
