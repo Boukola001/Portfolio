@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Boukola GBAYE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#home" class="nav-link" data-en="Home" data-fr="Accueil">Accueil</a>
+        <a href="#about" class="nav-link" data-en="About Me" data-fr="À propos">À propos</a>
+        <a href="blog.html" class="nav-link" data-en="Blog" data-fr="Blog">Blog</a>
+        <a href="#portfolio" class="nav-link" data-en="Portfolio" data-fr="Portfolio">Portfolio</a>
+        <a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div id="lang-toogle-fr" class="lang-toggle" class="nav-left">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+    </div>
+    <div id="lang-toogle-en" class="lang-toggle" class="nav-left" style="display: none;">
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('fr')">FR</button>
+    </div>
+    
+    
+    <main>
+        <section id="home">
+            <div id="particles-js" style="position:fixed; width:100%; height:100%; z-index:-1; top:0; left:0;"></div>
+            <div id="home-fr">
+            <h1>Boukola GBAYE</h1>
+            <hr>
+            <p>Bonjour ! Je suis étudiante en BUT Science des Données. Ceci est mon blog et portfolio personnel.</p>
+            </div>
+
+            <div id="home-en" style="display:none;">
+            <h1>Boukola GBAYE</h1>
+            <p>Hello! I'm a student in a Data Science Bachelor. This is my personal blog and portfolio.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="about-fr">
+                <h2>À propos de moi</h2>
+                <p>
+                    <img id="photo_eva" src="images/photo_boukola.jpg" alt="Photo de Boukola GBAYE">
+                    Je suis Boukola GBAYE, étudiante en BUT Science des Données à Lisieux. Passionnée par les sciences, 
+                    j'ai découvert un réel intérêt pour la science des données et son rôle clé dans la compréhension 
+                    du monde moderne.
+                    <br> <br>
+                    J’aime relier mes goûts pour les statistiques, les mathématiques, la programmation et 
+                    leurs applications concrètes dans divers domaines.
+                    <br><br>
+                    Ce que j’apprécie particulièrement, c’est l’automatisation pour gagner en efficacité, 
+                    l’analyse des tendances dans les données, et la richesse des échanges en équipe.
+                    <br><br>
+                    La dimension interdisciplinaire du domaine me permet d’explorer de nouveaux secteurs et d’apprendre 
+                    constamment, rendant la discipline stimulante et formatrice.
+                    <br><br>
+                    Je crois en la puissance des données pour éclairer les décisions et améliorer la vie. Mon objectif 
+                    est de contribuer à des projets innovants et impactants.
+                </p>
+            </div>
+            <!--Mon parcours-->
+            <div id="journey-fr" class="journey">
+                <h2>Mon parcours</h2>
+                <dl class="timeline">
+                    <dt>2024 - 2026</dt>
+                    <dd>
+                        <h3>BUT Science des Données - IUT GON Campus de Caen, pôle de Lisieux</h3>
+                        <p>Apprentissage axé sur les statistiques et l'informatique avec 
+                            du travail en équipe sur des projets concrets, liant technique et expertise métier
+                        </p>
+                    </dd>
+
+                    <dt>2022 - 2024</dt>
+                    <dd>
+                        <h3>CPGE - Institut de mathématiques et de Sciences Physiques (Bénin)</h3>
+                        <p>Formation en mathématiques, physiques et sciences de l'ingénieur.
+                        </p>
+                    </dd>
+
+                    <dt>2022</dt>
+                    <dd>
+                        <h3>Baccalauréat scientifique, série C, mention très-bien - CS La Rose (Bénin)</h3>
+                        <p>Troisième au plan national et première parmi les filles.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+
+            <!--Version anglaise-->
+
+            <div id="about-en" style="display:none;">
+                <h2>About Me</h2>
+                <p>
+                    <img id="photo_eva" src="images/photo_boukola.jpg" alt="Photo of Boukola GBAYE">
+                    I am Boukola GBAYE, a student in the Data Science Bachelor of Technology program in Lisieux. 
+                    Passionate about science, I discovered a real interest in data science and its key role in 
+                    understanding the modern world.
+                    <br> <br>
+                    I enjoy combining my interests in statistics, mathematics, programming, and their practical 
+                    applications in various fields.
+                    <br> <br>
+                     What I particularly appreciate is automation for increased efficiency,the analysis of trends 
+                     in data, and the enriching exchanges within a team.
+                    <br> <br>
+                    The interdisciplinary nature of the field allows me to explore new sectors and learn constantly, 
+                    making the discipline stimulating and educational.
+                    <br> <br>
+                    I believe in the power of data to inform decisions and improve lives. My goal is to contribute 
+                    to innovative and impactful projects.
+                </p>
+            </div>
+            <div id="journey-en" class="journey" style="display: none;">
+                <h2>My Journey</h2>
+                <dl class="timeline">
+                    <dt>2024 - 2026</dt>
+                    <dd>
+                        <h3>BUT Data Science - IUT GON Campus of Caen, Lisieux branch</h3>
+                        <p>Learning focused on statistics and computer science with teamwork on practical projects, 
+                            linking technical skills and business expertise.</p>
+                    </dd>
+                
+                    <dt>2022 - 2024</dt>
+                    <dd>
+                        <h3>Preparatory Classes (CPGE) - Institute of Mathematics and Physical Sciences (Benin)</h3>
+                        <p>Training in mathematics, physics, and engineering sciences.</p>
+                    </dd>
+                
+                    <dt>2022</dt>
+                    <dd>
+                        <h3>Scientific Baccalaureate, Series C, Highest Honors - CS La Rose (Benin)</h3>
+                        <p>Ranked third nationally and first among girls.</p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div id="portfolio-fr">
+                <h2>Mes projets</h2>
+                <div id="projets-fr" class="projects-list">
+                    <div id="projet1-fr" class="project">
+                        <a href="projets/sondage.html" class="bouton">La pratique sportive chez les lycéens</a>
+                    </div>
+                        
+                    <div id="projet2-fr" class="project">
+                        <a href="projets/conception_bdd.html" class="bouton">Analyse médicale : conception d'une base de données</a>
+                    </div>
+
+                    <div id="projet3-fr" class="project">
+                        <a href="projets/regression.html" class="bouton">Corrélations entre varables morphologiques (ANSUR II)</a>
+                    </div>
+
+                    <div id="projet4-fr" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Analyse des prix nobel : lauréats et contributions</a>
+                    </div>
+
+                    <div id="projet5-fr" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Jeux Olympiques d'été : participation de la France</a>
+                    </div>
+
+                    <div id="projet6-fr" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Les accidents corporels de la circulation en Normandie</a>
+                    </div>
+                </div>
+            
+            </div>
+       
+            <div id="portfolio-en" style="display: none;">
+                <h2>My projects</h2>
+                <div id="projects-en" class="projects-list">
+                    <div id="project1-en" class="project">
+                        <a href="projets/sondage.html" class="bouton">Sports practice among high school students</a>
+                    </div>
+                        
+                    <div id="project2-en" class="project">
+                        <a href="projets/conception_bdd.html" class="bouton">Medical Analysis: Database Design</a>
+                    </div>
+
+                    <div id="project3-en" class="project">
+                        <a href="projets/regression.html" class="bouton">Correlations between morphological variables (ANSUR II)</a>
+                    </div>
+
+                    <div id="project4-en" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Analysis of the Nobel Prizes: winners and contributions</a>
+                    </div>
+
+                    <div id="project5-en" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Summer Olympic Games: France's participation</a>
+                    </div>
+
+                    <div id="project6-en" class="project">
+                        <a href="projets/prix_nobels.html" class="bouton">Traffic accidents in Normandy</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-fr">
+                <h2>Contact</h2>
+                <p>Vous pouvez me contacter à l'adresse email : <a href="mailto:laurence.gbaye@gmail.com">laurence.gbaye@gmail.com</a></p>
+                <p>Ou via mes réseaux sociaux :</p>
+                <ul>
+                    <li><a href="www.linkedin.com/in/boukola-gbaye-162296331">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+            <div id="contact-en" style="display:none;">
+                <h2>Contact</h2>
+                <p>You can contact me at: <a href="mailto:laurence.gbaye@gmail.com">laurence.gbaye@gmail.com</a></p>
+                <p>Or via my social networks:</p>
+                <ul>
+                    <li><a href="www.linkedin.com/in/boukola-gbaye-162296331">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+        
+
+
+    </main>
+    <footer>
+        <span data-fr="&copy; 2025 Boukola GBAYE. Tous droits réservés." data-en="&copy; 2025 Boukola GBAYE. All rights reserved.">
+            &copy; 2025 Boukola GBAYE. Tous droits réservés.</span>
+    </footer>
+    
+</body>
+</html>
