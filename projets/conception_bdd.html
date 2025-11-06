@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Conception d'une bdd- Boukola GBAYE</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="nav-link" data-en="Home" data-fr="Accueil">Accueil</a>
+        <a href="../about.html" class="nav-link" data-en="About Me" data-fr="À propos">À propos</a>
+        <a href="../blog.html" class="nav-link" data-en="Blog" data-fr="Blog">Blog</a>
+        <a href="../portfolio.html" class="nav-link" data-en="Portfolio" data-fr="Portfolio">Portfolio</a>
+        <a href="../contact.html" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div class="lang-toggle">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+    </div>
+
+    <main>
+        <section id="bdd-fr">
+            <h2>Analyse médicale : conception d'une base de données</h2>
+                <p>
+                    Des données médicales (fictives) ont été nettoyées et préparées avec Pandas et Numpy de Python.
+                    Pour ce faire, nous avons suivi les étapes suivantes : 
+
+                    <ol>
+                        <li>vérification des types de données</li>
+                        <li>gestion des données manquantes</li>
+                        <li>
+                            correction des incohérences et des erreurs typographiques
+                            <ul>
+                                <li>uniformisation des noms des patients et médecins</li>
+                                <li>correction des incohérences dans la colonne d’état de santé</li>
+                                <li>correction des anomalies dans les noms d’hôpitaux</li>
+                            </ul>
+                        </li>
+                        <li>détection et Suppression des doublons</li>
+                        <li>vérification de l’existence de valeurs aberrantes</li>
+                        <li>ajouter de nouvelles colonnes au DataFrame</li>
+                    </ol>
+                </p>
+                <p>
+                    Ensuite, mes camarades et moi avons conçu une base de données basée sur les données disponibles en 
+                    tenant compte des relations et occurences observées sur le jeu de données.
+                </p>
+                <p>
+                    Voici une image du modèle conceptuel obtenu.
+                    <img src="../images/bdd_im1.png" alt="Modèle conceptuel de la base de données">
+                </p>
+                <p>
+                    Nous avons continué la modélisation avec les modèles logique et physique. Les tables obtenues 
+                    ont été implémentées sous MySQL Workbench.
+                </p>
+                <p>
+                    La base de donnée étant prête à l'emploi, nous avons réalisé une analyse exploratoire.
+                    Un rapport Excel a été généré dynamiquement pour stocker les résultats.
+                </p>
+                <p>
+                    <img src="../images/bdd_im2.png" alt="Nombre de séjours hospitaliers par an">
+                </p>
+                <p>
+                    L’ensemble du projet, de la préparation à l’analyse, est détaillé dans le rapport complet. 
+                </p>
+                <p>
+                    Pour plus de détails, consultez le rapport complet ici.
+                </p>
+                <p>
+                    Scripts disponibles ici. 
+                </p>
+        </section>
+
+        <section id="bdd-en" style="display: none;">
+            <h2>Medical Analysis: Database Design</h2>
+                <p>
+                    Fictional medical data were cleaned and prepared using Python’s Pandas and NumPy libraries.
+                    The process followed these steps: 
+
+                    <ol>
+                        <li>Data type verification</li>
+                        <li>Handling missing data</li>
+                        <li>
+                            Correction of inconsistencies and typographical errors
+                            <ul>
+                                <li>Standardizing patient and physician names</li>
+                                <li>Correcting inconsistencies in the health status column</li>
+                                <li>Correcting anomalies in hospital names</li>
+                            </ul>
+                        </li>
+                        <li>Detection and removal of duplicates</li>
+                        <li>Checking for outliers</li>
+                        <li>Adding new columns to the DataFrame</li>
+                    </ol>
+                </p>
+                <p>
+                    Next, my classmates and I designed a database based on the available data, 
+                    taking into account the relationships and occurrences observed in the dataset. 
+                </p>
+                <p>
+                    Here is an image of the conceptual model.
+                    <img src="../images/bdd_im1.png" alt="Conceptual data model">
+                </p>
+                <p>
+                    We continued the modeling by creating logical and physical models. 
+                    The resulting tables were implemented in MySQL Workbench. 
+                </p>
+                <p>
+                    Once the database was ready for use, we performed exploratory analysis. 
+                    A dynamic Excel report was generated to store the results.
+                </p>
+                <p>
+                    <img src="../images/bdd_im2.png" alt="Number of hospital stays per year">
+                </p>
+                <p>
+                    The entire project, from data preparation to analysis, is explained in detail in the full report.
+                </p>
+                <p>
+                    For more information, see the complete report here.
+                </p>
+                <p>
+                    Scripts available here.
+                </p>
+        </section>
+    </main>
+    <footer>
+        <span data-fr="&copy; 2025 Boukola GBAYE. Tous droits réservés." data-en="&copy; 2025 Boukola GBAYE. All rights reserved.">
+            &copy; 2025 Boukola GBAYE. Tous droits réservés.</span>
+    </footer>
+
+</body>
+</html>

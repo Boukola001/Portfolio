@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Régression linéaire - Boukola GBAYE</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="nav-link" data-en="Home" data-fr="Accueil">Accueil</a>
+        <a href="../about.html" class="nav-link" data-en="About Me" data-fr="À propos">À propos</a>
+        <a href="../blog.html" class="nav-link" data-en="Blog" data-fr="Blog">Blog</a>
+        <a href="../portfolio.html" class="nav-link" data-en="Portfolio" data-fr="Portfolio">Portfolio</a>
+        <a href="../contact.html" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div class="lang-toggle">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+    </div>
+
+    <main>
+        <section id="sport-fr">
+            <h2>Corrélations entre varables morphologiques (ANSURII)</h2>
+            <p>
+                Ce projet visait à identifier les variables morphologiques les plus pertinentes pour expliquer le poids et 
+                la taille des soldats de l’armée américaine, en s’appuyant sur le jeu de données ANSUR II. 
+                L’étude porte sur la corrélation entre diverses variables quantitatives, en tenant compte des différences selon le sexe.
+                Les analyses ont été réalisées sous RStudio, en utilisant le coefficient de détermination R<sup>2</sup>
+                pour quantifier la qualité des corrélations
+            </p>
+            <p>
+                En ce qui concerne le poids, ce sont principalement la circonférence de la poitrine, de la cuisse, 
+                et de la taille qui montrent une forte association. 
+                Néanmoins, l’ordre d’importance de ces variables diffère entre hommes et femmes.  
+            </p>
+            <p>
+                <img src="../images/reg_imf.png" alt="Poids versus circonférence de cuisse chez les femmes">
+            </p>
+            <p>
+                Pour la taille, les variables morphologiques les plus liées sont la hauteur tibiale, la longueur du pied et 
+                la circonférence du poignet. Contrairement au poids, l’ordre d’importance est identique pour les deux sexes.
+            </p>
+            <p>
+                <img src="../images/reg_imh.png" alt="Taille versus hauteur tibiale chez les hommes">
+            </p>
+            <p>
+                Pour plus de détails, consultez le rapport complet ici.
+            </p>
+            <p>
+                Scripts d’analyse R disponibles ici. 
+            </p>
+        </section>
+
+        <section id="sport-en" style="display: none;">
+            <h2>Correlations Between Morphological Variables (ANSUR II)</h2>
+            <p>
+                This project aimed to identify the most relevant morphological variables explaining the weight and height of U.S. 
+                Army soldiers, based on the ANSUR II dataset. The study focused on correlations between quantitative variables, 
+                while accounting for sex-based differences. 
+                Analyses were conducted in RStudio, using the coefficient of determination R<sup>2</sup> to assess 
+                the strength of the associations.
+            </p>
+            <p>
+                Regarding weight, the most strongly associated variables are chest, thigh, and waist circumferences. 
+                However, the order of importance of these variables differ between men and women.
+            </p>
+            <p>
+                <img src="../images/reg_imf.png" alt="Weight versus thigh circumference among women">
+            </p>
+            <p>
+                For height, the most correlated morphological variables were tibial height, foot length, and wrist circumference. 
+                In contrast to weight, the ranking of these variables is identical across both sexes.
+            </p>
+            <p>
+                <img src="../images/reg_imh.png" alt="Height versus tibial height among men">
+            </p>
+            <p>
+                For more detailed results, including comparisons by sex, refer to the full report here.
+            </p>
+            <p>
+                R analysis scripts are also available here.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <span data-fr="&copy; 2025 Boukola GBAYE. Tous droits réservés." data-en="&copy; 2025 Boukola GBAYE. All rights reserved.">
+            &copy; 2025 Boukola GBAYE. Tous droits réservés.</span>
+    </footer>
+</body>
+</html>

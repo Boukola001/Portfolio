@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sondage de lycéens - Boukola GBAYE</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="nav-link" data-en="Home" data-fr="Accueil">Accueil</a>
+        <a href="../about.html" class="nav-link" data-en="About Me" data-fr="À propos">À propos</a>
+        <a href="../blog.html" class="nav-link" data-en="Blog" data-fr="Blog">Blog</a>
+        <a href="../portfolio.html" class="nav-link" data-en="Portfolio" data-fr="Portfolio">Portfolio</a>
+        <a href="../contact.html" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+    <div class="lang-toggle">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+    </div>
+
+    <main>
+        <section id="sport-fr">
+            <h2>La pratique sportive chez les lycéens</h2>
+            <p>
+                Ce projet avait pour objectif d’étudier les habitudes sportives des élèves du lycée Paul-Cornu de Lisieux, 
+                à travers un sondage par convenance. 
+                La démarche a débuté par la création d’un questionnaire précis et d’un dictionnaire de variables, 
+                permettant d’aborder aussi bien la pratique du sport au sein de l’établissement qu’en dehors.
+            </p>
+            <p>
+                Voici un extrait du questionnaire proposé aux élèves : 
+                <img src="../images/sondage_im1.png" alt="Extrait du questionnaire.">
+            </p>
+            <p>
+                Les entretiens ont été réalisés directement au lycée, puis les réponses ont été saisies dans un 
+                tableau Excel pour assurer leur organisation. Après un nettoyage des données, 
+                l’analyse sur RStudio a mis en évidence plusieurs tendances intéressantes, notamment la liste 
+                des sports les plus populaires hors établissement. 
+                <img src="../images/sondage_im2.png" alt="Top 5 des sports pratiqués en dehors du lycée"> 
+            </p>
+            <p>
+                Pour plus de détails, consultez le rapport complet ici.
+            </p>
+            <p>
+                Questionnaire, données et scripts d’analyse R disponibles ici. 
+            </p>
+        </section>
+        <section id="sport-en" style="display: none;"> 
+            <h2>Sports practice among high school students</h2> 
+            <p> This project aimed to study the sports habits of students at Paul-Cornu High School in Lisieux 
+                through a convenience survey. The approach began with designing a detailed questionnaire and a 
+                variable dictionary, allowing us to explore sports practice both within the school and outside of it. 
+            </p> 
+            <p> Below is an excerpt from the questionnaire given to students: 
+                <img src="../images/sondage_im1.png" alt="Questionnaire excerpt"> 
+            </p>
+            <p> Interviews were conducted on-site at the school, and responses were entered into an Excel table 
+                for organization. After cleaning the data, analysis in RStudio revealed several interesting trends, 
+                including the most popular sports practiced outside of school. 
+                <img src="../images/sondage_im2.png" alt="Top 5 sports practiced outside of high school"> 
+            </p> 
+            <p>
+                For further details, see the full report here.
+            </p> 
+            <p> 
+                Questionnaire, data, and R analysis scripts available here. 
+            </p> 
+        </section>
+    </main>
+    <footer>
+        <span data-fr="&copy; 2025 Boukola GBAYE. Tous droits réservés." data-en="&copy; 2025 Boukola GBAYE. All rights reserved.">
+            &copy; 2025 Boukola GBAYE. Tous droits réservés.</span>
+    </footer>
+    
+</body>
+</html>
