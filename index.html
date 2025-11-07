@@ -144,27 +144,27 @@
                 <h2>Mes projets</h2>
                 <div id="projets-fr" class="projects-list">
                     <div id="projet1-fr" class="project">
-                        <a href="projets/sondage.html" class="bouton">La pratique sportive chez les lycéens</a>
+                        <a href="#" class="bouton" data-url="projets/sondage.html" onclick="openModal(this, event)">La pratique sportive chez les lycéens</a>
                     </div>
                         
                     <div id="projet2-fr" class="project">
-                        <a href="projets/conception_bdd.html" class="bouton">Analyse médicale : conception d'une base de données</a>
+                        <a href="#" data-url="projets/conception_bdd.html" class="bouton" onclick="openModal(this, event)">Analyse médicale : conception d'une base de données</a>
                     </div>
 
                     <div id="projet3-fr" class="project">
-                        <a href="projets/regression.html" class="bouton">Corrélations entre varables morphologiques (ANSUR II)</a>
+                        <a href="#" data-url="projets/regression.html" class="bouton" onclick="openModal(this, event)">Corrélations entre varables morphologiques (ANSUR II)</a>
                     </div>
 
                     <div id="projet4-fr" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Analyse des prix nobel : lauréats et contributions</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Analyse des prix nobel : lauréats et contributions</a>
                     </div>
 
                     <div id="projet5-fr" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Jeux Olympiques d'été : participation de la France</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Jeux Olympiques d'été : participation de la France</a>
                     </div>
 
                     <div id="projet6-fr" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Les accidents corporels de la circulation en Normandie</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Les accidents corporels de la circulation en Normandie</a>
                     </div>
                 </div>
             
@@ -174,31 +174,41 @@
                 <h2>My projects</h2>
                 <div id="projects-en" class="projects-list">
                     <div id="project1-en" class="project">
-                        <a href="projets/sondage.html" class="bouton">Sports practice among high school students</a>
+                        <a href="#" data-url="projets/sondage.html" class="bouton" onclick="openModal(this, event)">Sports practice among high school students</a>
                     </div>
                         
                     <div id="project2-en" class="project">
-                        <a href="projets/conception_bdd.html" class="bouton">Medical Analysis: Database Design</a>
+                        <a href="#" data-url="projets/conception_bdd.html" class="bouton" onclick="openModal(this, event)">Medical Analysis: Database Design</a>
                     </div>
 
                     <div id="project3-en" class="project">
-                        <a href="projets/regression.html" class="bouton">Correlations between morphological variables (ANSUR II)</a>
+                        <a href="#" data-url="projets/regression.html" class="bouton" onclick="openModal(this, event)">Correlations between morphological variables (ANSUR II)</a>
                     </div>
 
                     <div id="project4-en" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Analysis of the Nobel Prizes: winners and contributions</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Analysis of the Nobel Prizes: winners and contributions</a>
                     </div>
 
                     <div id="project5-en" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Summer Olympic Games: France's participation</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Summer Olympic Games: France's participation</a>
                     </div>
 
                     <div id="project6-en" class="project">
-                        <a href="projets/prix_nobels.html" class="bouton">Traffic accidents in Normandy</a>
+                        <a href="#" data-url="projets/prix_nobels.html" class="bouton" onclick="openModal(this, event)">Traffic accidents in Normandy</a>
                     </div>
                 </div>
                 
             </div>
+
+            <!--Fenêtre cachée-->
+            <div id="modal" class="modal" onclick="closeModal()" style="display: none;">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+
+
         </section>
 
         <section id="contact">

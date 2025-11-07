@@ -1,27 +1,30 @@
 console.log("Le script est bien chargé !");
-
+window.currentLang = window.currentLang || 'fr';
 function switchLanguage(lang) {
-    // Hide/show content sections
-    document.querySelectorAll('section > div').forEach(div => {
-        if (div.id.endsWith(lang)) {
-            div.style.display = '';
-        } else {
-            div.style.display = 'none';
-        }
-    });
+  // langue actuelle
+  window.currentLang = lang;
+  // Hide/show content sections
+  document.querySelectorAll('section > div').forEach(div => {
+    if (div.id.endsWith(lang) | div.id=="particles-js") {
+      div.style.display = '';
+    } 
+    else {
+      div.style.display = 'none';
+    }
+  });
 
     // Change nav labels
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.textContent = link.getAttribute('data-' + lang);
-    });
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.textContent = link.getAttribute('data-' + lang);
+  });
 
-    // Change footer text
-    document.querySelectorAll('footer span').forEach(span => {
-        span.textContent = span.getAttribute('data-' + lang);
-    });
+  // Change footer text
+  document.querySelectorAll('footer span').forEach(span => {
+    span.textContent = span.getAttribute('data-' + lang);
+  });
 
-    // Change <html lang="">
-    document.documentElement.lang = lang;
+  // Change <html lang="">
+  document.documentElement.lang = lang;
 }
 
 const sections = document.querySelectorAll("section");
@@ -38,6 +41,33 @@ window.addEventListener("scroll", () => {
     link.classList.remove("active");
     if (link.getAttribute("href") === "#" + current) link.classList.add("active");
   });
+});
+console.log("nouvelle langue", currentLang);
+// configuration des modales pour l'affichage des projets
+
+function openModal(element, event) {
+  event.preventDefault()
+  const url = element.getAttribute('data-url');
+  const iframe = document.querySelector('#modal iframe');
+  iframe.src = url;
+  document.getElementById('modal').style.display = 'flex';
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  const iframe = modal.querySelector('iframe');
+  iframe.src = ''; // vider l’iframe à la fermeture
+  modal.style.display = 'none';
+}
+
+// Fermeture si clic hors modale
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// Fermeture avec touche Échap
+window.addEventListener('keydown', function(e) {
+  if (e.key === "Escape") closeModal();
 });
 
 // configuration des particules
