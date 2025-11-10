@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
+    margin: 0px 0px;
     padding: 0;
     background: #fafafa;
     color: #222;
@@ -45,8 +45,11 @@ nav .nav-link:hover {
 }
 
 .lang-toggle {
-    margin: 15px 0;
+    margin: 0px 0;
     text-align: center;
+    position: fixed;
+    top:2px;
+    left: 0;
 }
 
 .lang-toggle button {
@@ -93,8 +96,13 @@ footer {
   background-size: cover;       /* L'image couvre tout l'élément */
   /*background-position: center;  /* Centrage de l'image */
   /*background-repeat: no-repeat; /* Pas de répétition */
+  animation: fadeIn 1s ease-in;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 #home h1 {
   font-size: 2.5rem;
   color: #2c3e50;
@@ -110,6 +118,15 @@ footer {
 
 
 /*Styles pour à propos*/
+#about{
+  background-image: url("images/im2.jpg");
+  background-size: cover; /* pour que l’image couvre tout l’élément */
+  background-position: center; /* pour centrer l’image */
+  background-repeat: no-repeat; /* pour éviter la répétition */
+  margin: 0px;
+}
+
+
 .journey {
     max-width: 700px;
     

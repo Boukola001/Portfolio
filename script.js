@@ -3,6 +3,7 @@ window.currentLang = window.currentLang || 'fr';
 function switchLanguage(lang) {
   // langue actuelle
   window.currentLang = lang;
+
   // Hide/show content sections
   document.querySelectorAll('section > div').forEach(div => {
     if (div.id.endsWith(lang) | div.id=="particles-js") {
@@ -75,7 +76,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 190,
+        "value": 70,
         "density": { "enable": true, "value_area": 800 }
       },
       "color": { "value": "#6a89cc" },
@@ -86,7 +87,7 @@ particlesJS('particles-js',
         "value": 0.5
       },
       "size": {
-        "value": 3,
+        "value": 20,
         "random": true
       },
       "line_linked": {
@@ -94,7 +95,7 @@ particlesJS('particles-js',
         "distance": 150,
         "color": "#6a89cc",
         "opacity": 0.4,
-        "width": 1
+        "width": 0.5
       },
       "move": {
         "enable": true,
