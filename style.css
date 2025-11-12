@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0;
     background: #fafafa;
     color: #222;
@@ -71,8 +71,6 @@ nav .nav-link:hover {
 }
 
 main {
-    margin: 0 auto;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
@@ -101,20 +99,24 @@ footer {
   animation: fadeIn 1s ease-in;
 }
 
+#particles-js{
+  background: linear-gradient(135deg, #688fbf 0%, #245a9b 100%);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 #home h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #dee5ec;
   margin-bottom: 15px;
 }
 
 #home p {
   max-width: 600px;
   font-size: 1.1rem;
-  color: #555;
+  color: #dee5ec;
 }
 
 
@@ -217,6 +219,13 @@ h2 {
 
 /*Styles pour le portfolio*/
 
+#portfolio{
+  background-image: url(images/image-portfolio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .projects-list {
   display: flex;
   flex-direction: row;
@@ -229,8 +238,9 @@ h2 {
 
 
 .project {
-  flex: 0 1 250px;
-  background: #f0f4f8;
+  display: flex;
+  flex: 0 0 250px;
+  background: white;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(42, 115, 204, 0.1);
   padding: 20px;
@@ -238,6 +248,10 @@ h2 {
   transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
   min-width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .project:hover {
@@ -245,7 +259,10 @@ h2 {
   box-shadow: 0 8px 16px rgba(42, 115, 204, 0.3);
   transform: translateY(-5px);
   border: 5px #222 double;
-  color: white;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project a.bouton {
@@ -288,4 +305,30 @@ h2 {
   top: 10px; right: 15px;
   font-size: 28px;
   cursor: pointer;
+}
+
+/*images projets*/
+#projet1-fr:hover {
+  background-image: url(images/image-sondage.jpg);
+}
+
+#projet2-fr:hover {
+  background-image: url(images/image-medicale.jpg);
+}
+
+#projet3-fr:hover {
+  background-image: url(images/image-ansur.png);
+}
+
+#projet4-fr:hover {
+  background-image: url(images/image-Nobel.jpg);
+}
+
+#projet5-fr:hover {
+  background-image: url(images/image-JO.jpg.webp);
+  color: white;
+}
+
+#projet6-fr:hover {
+  background-image: url(images/image-accident.jpg);
 }
