@@ -19,7 +19,9 @@ nav {
   background: #fafafa;
     padding: 10px 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    padding-right: 2%;
+    padding-left: 2%;
     gap: 20px;
     position: sticky;
     top: 0;             /* Collée en haut */
@@ -118,13 +120,13 @@ footer {
 
 
 /*Styles pour à propos*/
-#about{
+/*#about{
   background-image: url("images/im2.jpg");
   background-size: cover; /* pour que l’image couvre tout l’élément */
-  background-position: center; /* pour centrer l’image */
-  background-repeat: no-repeat; /* pour éviter la répétition */
-  margin: 0px;
-}
+ /* background-position: center; /* pour centrer l’image */
+ /* background-repeat: no-repeat; /* pour éviter la répétition */
+ /* margin: 0px;
+}*/
 
 
 .journey {
