@@ -10,7 +10,7 @@
         <section id="nobel-fr">
             <h2>Analyse des prix nobel : lauréats et contributions</h2>
             <p>
-                Ce projet vise à explorer les lauréats et les découvertes récompensées par le Prix Nobel, 
+                Ce projet vise à étudier les lauréats et les découvertes récompensées par le Prix Nobel, 
                 à travers une analyse automatisée de fichiers de données. 
             </p>
             <p>
@@ -25,59 +25,56 @@
                 leur récupération et leur présentation.
             </p>
             <p>
-                Nous avons extrait plusieurs statistiques clés du jeu de données :
+                Nous avons extrait plusieurs statistiques clés du jeu de données :
+                <ul>
+                <li>La répartition hommes/femmes parmi les lauréats</li>
 
-                La répartition hommes/femmes parmi les lauréats
+                <li>Le nombre de prix attribués selon la catégorie et le pays</li>
 
-                Le nombre de prix attribués selon la catégorie et le pays
-
-                L’âge du plus jeune et du plus âgé lors de la rem­ise du prix
-                
-                Les résultats, synthétisés dans un tableau, apportent une vue d’ensemble sur la diversité, la répartition géographique et les parcours exceptionnels des lauréats.
+                <li>L’âge du plus jeune et du plus âgé lors de la rem­ise du prix</li>
+                </ul>
+                Les résultats, synthétisés dans un tableau, apportent une vue d’ensemble sur la diversité, 
+                la répartition géographique et les parcours exceptionnels des lauréats.
             </p>
             <p>
-                Pour la taille, les variables morphologiques les plus liées sont la hauteur tibiale, la longueur du pied et 
-                la circonférence du poignet. Contrairement au poids, l’ordre d’importance est identique pour les deux sexes.
-            </p>
-            <p>
-                <img src="../images/reg_imh.png" alt="Taille versus hauteur tibiale chez les hommes">
-            </p>
-            <p>
-                Pour plus de détails, consultez le rapport complet ici.
-            </p>
-            <p>
-                Scripts d’analyse R disponibles ici. 
+                Pour plus de détails, consultez le rapport complet et les scripts Python 
+                <a href="https://github.com/Boukola001/Prix_nobels.git" target="_blank">ici</a>.
             </p>
         </section>
 
         <section id="nobel-en" style="display: none;">
-            <h2>Correlations Between Morphological Variables (ANSUR II)</h2>
+            <h2>Analysis of the Nobel Prizes: winners and contributions</h2>
             <p>
-                This project aimed to identify the most relevant morphological variables explaining the weight and height of U.S. 
-                Army soldiers, based on the ANSUR II dataset. The study focused on correlations between quantitative variables, 
-                while accounting for sex-based differences. 
-                Analyses were conducted in RStudio, using the coefficient of determination R<sup>2</sup> to assess 
-                the strength of the associations.
+                This project aims to study the winners and discoveries awarded the Nobel Prize, 
+                through automated analysis of data files. 
             </p>
             <p>
-                Regarding weight, the most strongly associated variables are chest, thigh, and waist circumferences. 
-                However, the order of importance of these variables differ between men and women.
+                The project begins by opening and reading the data file in CSV format with 
+                Python's module <code>csv</code>.
+                This allows us to prepare the dataset for automated statistics: 
+                filling missing values ​​with default values ​​adapted to the context, creating 
+                additional columns to optimize the analysis, etc.
             </p>
             <p>
-                <img src="../images/reg_imf.png" alt="Weight versus thigh circumference among women">
+                The results are automatically saved in new files (csv, xlsx and json) to ease 
+                their recovery and presentation.
             </p>
             <p>
-                For height, the most correlated morphological variables were tibial height, foot length, and wrist circumference. 
-                In contrast to weight, the ranking of these variables is identical across both sexes.
+                We extracted several key statistics from the dataset:
+                <ul>
+                    <li>The distribution of men/women among the winners</li>
+
+                    <li>The number of prizes awarded according to category and country</li>
+
+                    <li>The ages of the youngest and oldest at the time of the award ceremony</li>
+                    
+                    <li>The results, summarized in a table, provide an overview of diversity,</li>
+                </ul> 
+                the geographical distribution and exceptional backgrounds of the winners.
             </p>
             <p>
-                <img src="../images/reg_imh.png" alt="Height versus tibial height among men">
-            </p>
-            <p>
-                For more detailed results, including comparisons by sex, refer to the full report here.
-            </p>
-            <p>
-                R analysis scripts are also available here.
+                Pour plus de détails, consultez le rapport complet et les scripts Python 
+                <a href="https://github.com/Boukola001/Prix_nobels.git" target="_blank">ici</a>.
             </p>
         </section>
     

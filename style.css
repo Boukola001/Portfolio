@@ -101,6 +101,9 @@ footer {
 
 #particles-js{
   background: linear-gradient(135deg, #688fbf 0%, #245a9b 100%);
+  background-size: cover; /* pour que l’image couvre tout l’élément */
+  background-position: center; /* pour centrer l’image */
+  background-repeat: no-repeat; /* pour éviter la répétition */
 }
 
 @keyframes fadeIn {
@@ -122,13 +125,7 @@ footer {
 
 
 /*Styles pour à propos*/
-/*#about{
-  background-image: url("images/im2.jpg");
-  background-size: cover; /* pour que l’image couvre tout l’élément */
- /* background-position: center; /* pour centrer l’image */
- /* background-repeat: no-repeat; /* pour éviter la répétition */
- /* margin: 0px;
-}*/
+
 
 
 .journey {
@@ -218,13 +215,6 @@ h2 {
 }
 
 /*Styles pour le portfolio*/
-
-#portfolio{
-  background-image: url(images/image-portfolio.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .projects-list {
   display: flex;
