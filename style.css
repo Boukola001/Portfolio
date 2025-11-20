@@ -129,7 +129,10 @@ footer {
 
 /*Styles pour à propos*/
 
-
+#about{
+  width: 60%;
+  margin: 0px auto;
+}
 
 .journey {
     max-width: 700px;
@@ -137,9 +140,6 @@ footer {
     font-family: 'Poppins', sans-serif;
   }
 
-h1{
-  font-size: 3em;
-}
 
 img{
   display: block;
@@ -277,6 +277,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.5em;
 }
 
 .modal-content {
