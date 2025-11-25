@@ -141,7 +141,7 @@ footer {
   }
 
 
-#photo_eva{
+img{
   display: block;
   width: 80%;
   object-fit: cover;
@@ -327,6 +327,13 @@ h2 {
   background-image: url(images/image-accident.jpg);
 }
 
-img{
+.logos{
   width: 34px;
+  display: inline;
+}
+
+/*span pour mettre les outils, compétences*/
+span{
+  font-size: 0.5em;
+  color: #245a9b;
 }
