@@ -141,7 +141,7 @@ footer {
   }
 
 
-img{
+#photo_eva{
   display: block;
   width: 80%;
   object-fit: cover;
@@ -297,32 +297,36 @@ h2 {
 .close {
   position: absolute;
   top: 10px; right: 15px;
-  font-size: 28px;
+  font-size: 88px;
   cursor: pointer;
 }
 
 /*images projets*/
-#projet1-fr:hover {
+#projet1-fr:hover, #project1-en:hover {
   background-image: url(images/image-sondage.jpg);
 }
 
-#projet2-fr:hover {
+#projet2-fr:hover, #project2-en:hover {
   background-image: url(images/image-medicale.jpg);
 }
 
-#projet3-fr:hover {
+#projet3-fr:hover, #project3-en:hover {
   background-image: url(images/image-ansur.png);
 }
 
-#projet4-fr:hover {
+#projet4-fr:hover, #project4-en:hover {
   background-image: url(images/image-Nobel.jpg);
 }
 
-#projet5-fr:hover {
+#projet5-fr:hover, #project5-en:hover {
   background-image: url(images/image-JO.jpg.webp);
   color: white;
 }
 
-#projet6-fr:hover {
+#projet6-fr:hover, #project6-en:hover {
   background-image: url(images/image-accident.jpg);
+}
+
+img{
+  width: 34px;
 }
